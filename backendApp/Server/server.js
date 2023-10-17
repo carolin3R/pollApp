@@ -55,7 +55,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // start the express web server listening on 8080
-const PORT = 3000;
+const PORT = 3000; // was 3000
 app.listen(PORT, () => {
  console.log(`server running on port ${PORT}`);
 });

@@ -1,7 +1,6 @@
 console.log('Client-side code running TESTING TO MAKE SURE THIS IS BEING LOADED'); // lil test
 
-// gets element from html 
-const button = document.getElementById('myButton');
+
 
 // calls fetchData upon click
 
@@ -23,7 +22,7 @@ fetch('http://localhost:3000/addData', {
 
 function displayRadioValue() {
     var ele = document.getElementsByName('drone');
-
+    console.log("Went into Display!!")
     // displays the result to the user
     // I want to upon a button click update the database and possibly show the user the result
     for (i = 0; i < ele.length; i++) {
@@ -37,7 +36,11 @@ function displayRadioValue() {
                 // also want to send a request to the back-end to update database!!
     }
 }
-button.addEventListener("click", displayRadioValue);
+// gets element from html 
+// document.getElementById("myButton").onclick = function () { displayRadioValue; };
+// const button = document.getElementById('myButton');
+// button.addEventListener("click", displayRadioValue);
+
 // function 
 // function fetchData() {
 //   fetch('http://localhost:3000/')

@@ -4,6 +4,7 @@
 
  <link rel="stylesheet" href="question.css">
 <head>
+    <title>Poll Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
@@ -18,17 +19,19 @@
             <section class="answers">
             <input type="radio" id="yes" name="drone" value="yes" checked="checked">
             <label for="yes">Yes</label>
-        </div>
-        <div class="container">
             <input type="radio" id="no" name="drone" value="no">
             <label for="no">No</label>
+            <input type="button" id="submitButton" onclick="displayRadioValue(); window.location.href='file:///Users/carolinerasmussen/myapp/pollApp/client/afterSubmit.html';">
+            <label id="subBut" for="submitButton" class="btn btn-primary">Submit</label>
+            </section>
         </div>
-    </legend>
-        </section>
-          <button type="button" id="myButton" class="btn btn-primary"><a href="file:///Users/carolinerasmussen/myapp/pollApp/client/afterSubmit.html">Submit</a></button>
     </form>
-<div id="result"></div>
-</div>
-</body>
+    </legend>
+  </fieldset>
+    <!-- <button type="button" id="myButton" class="btn btn-primary"><a href="file:///Users/carolinerasmussen/myapp/pollApp/client/afterSubmit.html">Submit</a></button>
+    -->
+        <div id="result"></div>
+   </div>
 <script src="main.js"></script>
+</body>
 </html>

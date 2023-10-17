@@ -7,7 +7,7 @@
     border: none !important;
 }
 
-a {
+#subBut {
     background-color: white !important;
     color: darkblue !important;
     margin-top: 10px;
@@ -15,7 +15,7 @@ a {
     padding: 10px;
     border-radius: 2%;
 }
-a:hover {
+#subBut:hover {
     background-color: darkblue !important;
     border: 1px solid white !important;
     color: white !important;
